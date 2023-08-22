@@ -55,4 +55,11 @@ class PostController extends Controller
 
         return redirect()->route('index.posts');
     }
+
+    public function search(Request $request) {
+        $keyword = $request->input('title');
+        $posts = Post::where('title', 'like', '%' . $keyword . '%')->get();
+
+        return view('search')->with(['posts' => $posts, 'keyword' => $keyword]);
+    }
 }

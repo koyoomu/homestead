@@ -7,6 +7,10 @@ h1 {
     align-items: center;
 }
 
+h2 {
+    font-size: 20px;
+}
+
 li {
     margin-bottom: 10px;
 }
@@ -28,6 +32,15 @@ li {
     border-radius: 3px;
     padding: 3px 10px;
     margin-left: auto;
+    text-decoration: none;
+ }
+ .search_link {
+    font-size: 12px;
+    background-color: orange;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px 10px;
+    margin-left: 10px;
     text-decoration: none;
  }
 
@@ -52,4 +65,8 @@ li {
  button {
     margin-left: 10px;
     vertical-align: 2px;
+ }
+
+ .search_btn {
+    text-align: right;
  }
